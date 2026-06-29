@@ -32,7 +32,7 @@ pip install ai-commit
 Or from source:
 
 ```bash
-git clone https://github.com/mohamedorigami-jpg/ai-commit
+git clone https://github.com/Morad37/ai-commit
 cd ai-commit
 pip install .
 ```
