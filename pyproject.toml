@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-commit"
+version = "0.1.0"
+description = "Write good git commit messages with any AI provider"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Mo Radwan", email = "mohamed.origami@gmail.com"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+ai-commit = "ai_commit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ai_commit*"]
